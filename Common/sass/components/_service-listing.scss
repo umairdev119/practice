@@ -1,0 +1,172 @@
+.service-provider-card {
+  background-color: #fff;
+  min-height: 250px;
+  @include border-radius(6px);
+}
+
+/*********************/
+.service-provider-wrap {
+  margin: 40px 0px 60px;
+  .pagination-wrap {
+    padding-bottom: 20px;
+  }
+}
+
+.service-provider-card {
+  padding: 24px;
+  margin-bottom: 30px;
+  @extend .box-shadow;
+
+  .services-card {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    min-height: inherit;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -24px;
+      height: 100%;
+      top: 0;
+      border-right: 1px solid $borderColor;
+    }
+
+    .content {
+      .heading-info {
+        small {
+          min-height: 32px;
+        }
+      }
+      .desc {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .org-info {
+    padding-left: 40px;
+  }
+
+  .btn-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    border-radius: 40px;
+  }
+}
+
+.org-info {
+  padding-left: 24px;
+  height: 100%;
+  position: relative;
+
+  .info-address {
+    * {
+      @extend .font-12;
+    }
+
+    .floats {
+      width: 100%;
+      margin-bottom: 16px;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      label {
+        float: left;
+        font-weight: 700;
+        padding-right: 12px;
+        margin-bottom: 0;
+      }
+
+      span {
+        overflow: hidden;
+        display: inherit;
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+
+.pagination-wrap {
+  margin: 30px 0px;
+  height: 40px;
+  ul.pagination {
+    @extend ul.default-style;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: $blackColor;
+        @extend .font-16;
+        line-height: 16px;
+        margin-right: 16px;
+        display: block;
+        position: relative;
+        text-decoration: underline;
+        cursor: pointer;
+        z-index: 9;
+
+        span {
+          color: $blackColor;
+        }
+
+        &.pg-disable {
+          opacity: 0.5;
+          text-decoration: none;
+          cursor: default;
+        }
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.5;
+        }
+
+        &.active {
+          text-decoration: none;
+          width: 40px;
+          height: 40px;
+          position: relative;
+          left: -10px;
+          top: -10px;
+
+          &:after {
+            content: "";
+            background-color: $primaryColor;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            @include border-radius(50%);
+            z-index: 1;
+          }
+
+          span {
+            color: $white;
+            z-index: 2;
+            position: relative;
+            left: 24px;
+            top: 12px;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
+
+
+
+
+
+

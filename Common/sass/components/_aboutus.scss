@@ -1,0 +1,109 @@
+.fahad{
+  float:left;
+  margin-left: 10px;
+}
+
+.ab-img-cont {
+  position: relative;
+  margin: 120px 0 60px 0;
+  .content {
+    p {
+      @extend .font-20;
+      line-height: 32px;
+      max-width: 570px;
+    }
+  }
+  .big-img {
+    max-width: 570px;
+    position: relative;
+    margin-top: -290px;
+    float: right;
+    em {
+
+      position: relative;
+      width: 570px;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.ab-figures {
+  background-color: $blackColor;
+  padding: 60px 0px;
+  margin-bottom: 60px;
+  .big-number {
+    color: $darkerOrange;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding-left: 115px;
+    display: flex;
+    &:before {
+      content: "";
+      left: 0;
+      top: 0;
+      border-top: 1px solid $primaryColor;
+      width: 85px;
+      @include vertical-align();
+      position: absolute;
+    }
+  }
+  small {
+    @extend .font-16;
+    line-height: 22px;
+    color: $white;
+    align-self: flex-end;
+    position: relative;
+    top: -24px;
+    left: 16px;
+    font-weight: 600;
+  }
+  .primary-heading{
+    h1{
+      margin-bottom: 0;
+    }
+    &.spacing-top-bottom{
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.ab-core {
+  h2 {
+    margin-bottom: 51px;
+  }
+}
+
+.services-card-sm {
+  margin-bottom: 60px;
+}
+
+.ab-contact {
+  padding: 60px 0px;
+  .primary-heading {
+    h2 {
+      margin-bottom: 32px;
+    }
+  }
+  .content {
+    p {
+      max-width: 625px;
+      @extend .font-20;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+    .arrow-btn {
+      margin: 0;
+    }
+  }
+  .image {
+    margin-top: 15px;
+  }
+}

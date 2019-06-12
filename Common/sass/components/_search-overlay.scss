@@ -1,0 +1,218 @@
+.search-overlay{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: -110%;
+  top: 0;
+  z-index: 110;
+  overflow: auto;
+  background: $darkerBlue;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  &.active {
+    left: 0;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+  }
+  .search {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid $darkGrey;
+    padding: 0 0 33px 0;
+    margin: 37px 0 32px;
+    input[type="search"] {
+      display: block;
+      background: none;
+      padding: 0 42px;
+      border: none !important;
+      font-size: 24px;
+      line-height: 16px;
+      width: 100%;
+      outline: none;
+      color: #fff;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $darkGrey;
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $darkGrey;
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $darkGrey;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $darkGrey;
+      }
+    }
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: auto;
+      font-size: 33px;
+      color: $primaryColor;
+      height: auto;
+      padding: 0;
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+  .close-button{
+    position: absolute;
+    right: 10px;
+    top: 33px;
+    font-size: 40px;
+    color: $white;
+    opacity: 0.4;
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+  .tabs{
+    margin-bottom: 32px;
+    ul {
+      li{
+        width: auto;
+        a{
+          @extend .font-20;
+          opacity: 1;
+          color: $darkGrey;
+          font-weight: 600;
+          padding-right: 0;
+          padding-bottom: 18px;
+        }
+        &.active{
+          a{
+            color: $primaryColor;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .services-card{
+    margin: 0 0 32px;
+  }
+
+}
+
+.product-links{
+  display: block;
+  border-radius: 6px;
+  background-color: $whiteOpacity2;
+  padding: 24px;
+  margin: 0;
+  li{
+    @extend .font-16;
+    font-weight: 600;
+    color: $white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+    span{
+      display: block;
+      @extend .font-20;
+      font-weight: 700;
+      border-bottom: 1px solid $white;
+      padding: 0 0 16px;
+      margin: 0;
+    }
+  }
+}
+
+.not-found{
+  display: block;
+  text-align: center;
+  margin: 48px 0;
+  p{
+    @extend .font-20;
+    font-weight: 700;
+    color: $white;
+    padding: 0;
+    margin: 0 0 8px;
+  }
+  span{
+    @extend .font-14;
+    color: $white;
+    opacity: 0.5;
+  }
+}
+
+.search-overlay-mob{
+  .back-cta {
+    i {
+      font-size: 11px;
+    }
+  }
+  .btn-orange {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 10px;
+    margin: 0 0 0 0;
+    border-radius: 40px;
+  }
+  .link-orange {
+    &.white {
+      text-decoration: underline;
+      margin: 13px 0 0;
+      display: inline-block;
+    }
+  }
+  .filter-item{
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 2px solid $white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 24px 9px;
+    margin: 0 0 16px;
+    transition-duration: .5s;
+    &:hover{
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+    }
+    em{
+      display: block;
+      width: 50px;
+      margin: 0 auto 12px;
+    }
+    p{
+      @extend .font-14;
+      font-weight: 600;
+      color: $white;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  h2{
+    @extend .font-20;
+    font-weight: 700;
+    margin: 24px 0;
+  }
+}
+
+.margin-t-26{
+  margin-top: 26px;
+}

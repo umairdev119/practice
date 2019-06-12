@@ -1,0 +1,81 @@
+.main-footer{
+  background:#0c2340;
+  padding-top:32px;
+}
+.footer-container{
+  display:flex;
+  margin-bottom:23px;
+}
+.main-footer .logo-ft {
+  width:50px;
+}
+.footer-container .ft-crumb{
+  padding: 8px 15px;
+  list-style:none;
+}
+.ft-crumb {
+  color:#a9abac;
+  position:relative;
+}
+.ft-crumb li{
+  padding-left:20px;
+}
+.ft-crumb li:before{
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background: url(/Common/images/right-chevron-grey.png) 0 0 no-repeat;
+  background-size: contain!important;
+}
+.footer-right {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-links {
+  padding-top: 6px;
+}
+.footer-links li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.main-footer a:hover{
+  color:#637488;
+}
+.main-footer a {
+  color: #fff;
+  line-height: .45;
+}
+.social-icons {
+  padding-left: 38px;
+  display: table;
+  margin-top: 1px;
+}
+.social-icons li {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-right: 17px;
+}
+.social-icons a {
+  text-align: center;
+  display: inline-block;
+}
+.main-footer .copyright {
+  font-size: 12px;
+  font-family: "FSMatthew-Light","GESSTextLight-Light";
+  font-weight: normal;
+  line-height: 1.5;
+  color: #fff;
+  text-align: right;
+  border-top: 1px solid #637488;
+  padding-top: 25px;
+  padding-bottom: 28px;
+}

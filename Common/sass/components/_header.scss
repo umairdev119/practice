@@ -1,0 +1,245 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container-modal {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+.nav-wrap-left ul li, .nav-wrap-right ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px 10px;
+}
+.nav-wrap-left ul li a, .nav-wrap-right ul li a{
+  color: #ffffff;
+  font-size: 14px;
+}
+.nav-head{
+  background: url("../../Common/images/hero.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.head-top{
+  background-color: #4c4e54;
+}
+.nav-wrap-left{
+  float: left;
+}
+.nav-wrap-right{
+  float: right;
+}
+.middle-section {
+  height: 88px;
+  background-color: rgba(128,128,128,.9);
+  z-index: 300;
+  width: 100%;
+}
+.logo-1{
+  display: inline-block;
+  padding: 10px;
+}
+.nav-wrap-left-1 {
+  display: inline-block;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.nav-wrap-left ul li, .nav-wrap-right ul li, .nav-wrap-left-1 ul li {
+  list-style: none;
+  display: block;
+  text-decoration: none;
+  float: left;
+  padding: 15px 10px;
+}
+.log-btn {
+  background: #FFFFFF;
+  width: 150px;
+  float: right;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px 0;
+  color: #003087;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.lock {
+  padding-left: 15px;
+}
+.triky-head {
+  display: none;
+}
+.nav-wrap-left ul li a, .nav-wrap-right ul li a, .nav-wrap-left-1 ul li a {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.txt-nav h1 {
+  position: absolute;
+  top: 50%;
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: bold;
+  width: 70%;
+}
+.nav-wrap-left ul li a:hover, .nav-wrap-left-1 ul li a:hover {
+  color: #d5d8db;
+}
+.nav-wrap-left ul li:hover {
+  background-color: rgba(128,128,128,.9);
+}
+a:hover{
+  text-decoration: none;
+}
+.nav-head:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: url(../images/spotlight-arrow-2.png) no-repeat 0 bottom;
+  background-size: contain;
+}

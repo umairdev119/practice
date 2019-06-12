@@ -1,0 +1,106 @@
+
+
+.position-for-top
+{
+  z-index: 9;
+  position: relative;
+  margin-top: -65px;
+}
+.getlisted-box
+{
+  background-color: $white;
+  min-height: 630px;
+  @extend .box-shadow;
+  @include border-radius(6px);
+}
+.grey
+{
+  height: 100%;
+  width: 100%;
+  background-color: $darkGreyOpacity15;
+  padding: 48px;
+  min-height: 630px;
+  h2
+  {
+    color:$blackColor;
+    margin-bottom: 24px;
+  }
+  ul.list
+  {
+    @extend ul.default-style;
+    margin-bottom: 36px;
+    li
+    {
+      @extend .font-16;
+      line-height: 16px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      em{
+        max-width: 30px;
+        display: inline-block;
+        vertical-align: top;
+        img
+        {
+          width: 100%;
+        }
+
+
+      }
+      span
+      {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 8px;
+        padding-top: 5px;
+      }
+    }
+  }
+  .image
+  {
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.register-box
+{
+  padding: 48px;
+  h2
+  {
+    color: $blackColor;
+    max-width: 420px;
+    margin-bottom: 24px;
+  }
+  > p
+  {
+    max-width: 500px;
+    @extend .font-16;
+    line-height:24px;
+    margin-bottom: 48px;
+  }
+}
+.alert-box
+{
+  background-color: $primaryColor;
+  padding: 24px;
+  margin-bottom: 32px;
+  display: block;
+  @extend .box-shadow;
+  @include border-radius(6px);
+  p
+  {
+    @extend .bold-m;
+    color: $white;
+    margin-bottom: 0;
+  }
+  *
+  {
+    color: $white;
+  }
+  &:hover
+  {
+    background-color: $primaryColorHover;
+    text-decoration: none;
+  }
+}

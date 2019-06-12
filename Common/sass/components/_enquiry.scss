@@ -1,0 +1,126 @@
+.enquiry {
+  position: fixed;
+  bottom: 2%;
+  z-index: 111;
+  right: 2%;
+  &.active {
+    .enquiry-popup{
+      @extend .box-shadow;
+
+    }
+    .enquiry-popup, .enquiry-toggle i {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+    }
+    .enquiry-toggle i.message{
+      -webkit-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -moz-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -ms-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -o-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .enquiry-toggle {
+    background-color: $blueColor;
+    width: 56px;
+    height: 56px;
+    display: block;
+    @include border-radius(6px);
+    &:hover, &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+    i {
+      visibility: hidden;
+      -webkit-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -moz-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -ms-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      -o-transition: visibility 0s 0.3s, opacity 0.3s linear;
+      opacity: 0;
+      color: $white;
+      font-size: 30px;
+      display: block;
+      @include vertical-align();
+      text-align: center;
+      font-weight: 400;
+      &.message{
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+        -webkit-transition: opacity 0.3s linear;
+        -moz-transition: opacity 0.3s linear;
+        -ms-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+      }
+    }
+  }
+  .enquiry-popup {
+    background-color: $blueColor;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s linear;
+    -moz-transition: visibility 0s 0.3s, opacity 0.3s linear;
+    -ms-transition: visibility 0s 0.3s, opacity 0.3s linear;
+    -o-transition: visibility 0s 0.3s, opacity 0.3s linear;
+    padding: 24px;
+    @include border-radius(6px);
+    h2 {
+      @extend .font-bold-20;
+      margin-bottom: 16px;
+    }
+    p {
+      @extend .font-normal-16;
+      color: $white;
+    }
+    .input-form {
+      background-color: $white;
+      @include border-radius(6px);
+      height: 40px;
+      margin-bottom: 24px;
+      padding: 5px 10px;
+      width: 47.4%;
+      margin-right: 20px;
+      border: 1px solid transparent;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      &:focus {
+        border: 1px solid $primaryColor;
+        outline: none;
+      }
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+
+    }
+    .custom-select {
+      margin-bottom: 24px;
+      select {
+        background-color: $white;
+        height: 40px;
+        border: 0;
+        padding-left: 10px;
+        padding-top: 8px;
+        @include border-radius(6px);
+      }
+    }
+    input.btn-primary {
+      @include border-radius(40px);
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}

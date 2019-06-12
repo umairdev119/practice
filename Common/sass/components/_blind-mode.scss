@@ -1,0 +1,80 @@
+.blind-black{
+  background: $black;
+  .featured-products:before, .services:after{
+    display: none;
+  }
+  .bg-curve, footer, .white-bg, .sticky{
+    background: $black;
+  }
+  .primary-heading span.black, .primary-heading h2.black, .case-studies h6, .case-studies h3, .arrow-btn,
+  .tabs ul li a{
+    color: $white;
+  }
+  .primary-heading span.black:before, header .marketPlace-logo:after, header .language:before, .sticky .sign-in-get-listed:after,
+  .tabs ul li::after{
+    background-color: $white;
+  }
+
+  header nav .container > .row, header .top-bar .container > .row, header .nav, header fieldset input[type="search"]{
+    border-color: $white;
+  }
+
+  .btn-orange{
+    background-color: $darkGrey;
+  }
+
+  header fieldset input[type="search"]:focus, header fieldset input[type="search"].active, header fieldset input[type="search"]:hover{
+    border-color: $darkGrey;
+  }
+
+  header fieldset input[type="search"]{
+    background-color: transparent;
+  }
+
+  .arrow-btn:before{
+    background-color: $darkGreyColor;
+  }
+
+  .read-more{
+    color: $darkGrey;
+  }
+
+  .sticky{
+    border-bottom: 1px solid $white;
+  }
+
+  header .accessability .accessability-dropdown h3{
+    color: $darkGreyColor;
+  }
+
+
+  //image gray
+  .img-responsive, #particles-wave, .featured-products-box em img, .swiper-button-prev, .swiper-button-next, .rate,
+  a, .temp-label img, header .sign-in-get-listed .sign-in h2:after, .tra-blue-box,
+  header .accessability h2:after{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: url(grayscale.svg);
+    -moz-filter: url(grayscale.svg);
+    filter: url(grayscale.svg);
+    -webkit-filter: grey;
+    -moz-filter: grey;
+    filter: grey;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+  }
+
+  //invert
+ .test2{
+  -webkit-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+
+
+
+}

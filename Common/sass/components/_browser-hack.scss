@@ -1,0 +1,24 @@
+.touch{
+  .services:after{
+    right: 0;
+    width: 33%;
+  }
+}
+
+.featured-products:before{
+  left: 0;
+  width: 40%;
+}
+
+
+// IE10 and IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  .curve{
+    bottom: -335px;
+  }
+  @media screen and (max-height: 700px){
+    .curve{
+      bottom: -290px;
+    }
+  }
+}

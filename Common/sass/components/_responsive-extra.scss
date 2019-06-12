@@ -1,0 +1,93 @@
+@media screen and (max-width: 991px) {
+  /*service provider detail Page*/
+  .col-padding-left {
+    padding-left: 15px;
+  }
+  .services-card-col-right {
+    margin-bottom: 40px;
+  }
+  .scrolling-links-wrap {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 32px;
+    .scrolling-links {
+      display: none;
+    }
+    .custom-select {
+      display: inline-block;
+      background-color: $white;
+      margin-bottom: 0;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      select {
+        padding: 10px 15px;
+        border: none;
+      }
+    }
+  }
+  .text-box {
+    padding: 16px;
+  }
+  .reviews {
+    padding: 16px 16px 5px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .portfolio li {
+    max-width: 47%;
+    margin-right: 6% !important;
+    &:nth-of-type(3n+3) {
+      margin-right: 6% !important;
+    }
+    &:nth-of-type(2n+2) {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services-card-col-right{
+    padding:16px;
+    .services-card{
+      margin: 0 0 16px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    h2{
+      margin-bottom: 16px;
+    }
+  }
+  .portfolio-detail {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    margin: 0 0 0 -15px;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    overflow: scroll;
+    border-radius: 0;
+  }
+  .back-portfolio{
+    position: relative;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin: 0 0 16px 14px;
+    &:before{
+      display: block;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+
+

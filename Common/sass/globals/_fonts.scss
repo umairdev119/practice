@@ -1,0 +1,45 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Tajawal:300,400,700&subset=arabic');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* FONTS SIZES */
+$base-header-nav:1em;
+$article-heading:2.7em;
+$sub-article-heading:1.5em;
+$base-para:1.7em;
+
+/* FONTS FAMILY */
+$openSans: 'Open Sans';
+$tajawal: 'Tajawal';
+$materialIcons: 'Material Icons';
+
+/*
+   light 300
+   regular 400
+   semi-bold 600
+   bold 700
+*/
+
+$font-list: 10 11 12 14 16 18 20 22 24 28 29 30 32 34 36 40 42 46 48 52 62;
+@each $current-font in $font-list {
+  $i: index($font-list, $current-font);
+
+  /*Normal Font size*/
+  .font-#{$current-font} {
+    font-size: $current-font+px;
+  }
+
+  /*Large Font size*/
+  body.font-large {
+    .font-#{$current-font} {
+      font-size: $current-font+2+px;
+    }
+  }
+  /*Small Font size*/
+  body.font-small {
+    .font-#{$current-font} {
+      font-size: $current-font+-2 +px;
+    }
+  }
+}

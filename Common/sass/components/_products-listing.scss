@@ -1,0 +1,25 @@
+.product-listing-wrap {
+  margin: 40px 0 50px;
+  .product-listing-box {
+    .featured-products-box {
+      margin-bottom: 30px;
+      min-height: 295px;
+      h3 {
+        height: 47px;
+        strong {
+          line-height: 27px;
+        }
+      }
+    }
+  }
+  .col-4 {
+    &:last-child {
+      .featured-products-box {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+

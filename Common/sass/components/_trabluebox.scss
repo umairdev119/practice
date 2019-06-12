@@ -1,0 +1,27 @@
+.tra-blue-box {
+  height: 288px;
+  border-radius: 16px;
+  background-image: linear-gradient(95deg, #0056a5, #2874bb);
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  h2 {
+    max-width: 650px;
+    line-height: 56px;
+    color: $white;
+    @extend .font-32;
+  }
+  .Aligner {
+    height: 288px;
+  }
+}
+
+.illustration-bg {
+  position: absolute;
+  left: 0;
+  img {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+  }
+}
